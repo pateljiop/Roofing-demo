@@ -17,9 +17,9 @@ nav{height:76px;background:#fff;display:flex;align-items:center;justify-content:
 .kicker{display:inline-block;background:var(--red);color:#fff;padding:9px 15px;font-size:12px;font-weight:950;letter-spacing:1px;transform:skew(-8deg)}
 h1{color:#fff;font-size:clamp(48px,6vw,78px);line-height:.92;letter-spacing:-4px;margin:21px 0 18px}h1 span{color:#f1262f}.hero p{color:#d9e5ef;font-size:18px;line-height:1.65;max-width:590px}
 .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{padding:15px 21px;border-radius:7px;font-weight:950;border:1px solid #ffffff55;color:#fff}.btn.redbtn{background:var(--red);border-color:var(--red)}.btn.outline:hover{background:#fff;color:var(--navy)}
-.heroPhoto{height:450px;border-radius:18px;overflow:hidden;box-shadow:0 25px 70px #000a;background:#12304f}.heroPhoto img{width:100%;height:100%;object-fit:cover}
+.heroPhoto{height:450px;border-radius:18px;overflow:hidden;box-shadow:0 25px 70px #000a;background:#12304f}.heroPhoto img{width:100%;height:100%;object-fit:cover;object-position:center}
 .trust{max-width:1120px;margin:-34px auto 0;position:relative;z-index:4;background:#fff;border-radius:14px;box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden}.trust div{text-align:center;padding:23px 10px;border-right:1px solid var(--line)}.trust div:last-child{border:0}.trust strong{display:block;color:var(--navy);font-size:25px}.trust span{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);font-weight:850}
-section{padding:90px 5%}.wrap{max-width:1200px;margin:auto}.eyebrow{color:var(--red);font-size:12px;font-weight:950;letter-spacing:2px}.title{color:var(--navy);font-size:clamp(36px,4vw,52px);letter-spacing:-2px;margin:8px 0 12px}.lead{color:var(--muted);line-height:1.7;max-width:700px}
+section{padding:90px 5%;background:#f5f7fa}.about{background:#fff}.wrap{max-width:1200px;margin:auto}.eyebrow{color:var(--red);font-size:12px;font-weight:950;letter-spacing:2px}.title{color:#071a32 !important;font-size:clamp(36px,4vw,52px);letter-spacing:-2px;margin:8px 0 12px}.lead{color:var(--muted);line-height:1.7;max-width:700px}
 .services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}.card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:24px;box-shadow:0 8px 28px #071a3209;transition:.25s}.card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
 .icon{width:52px;height:52px;border-radius:12px;background:#edf3f8;color:var(--red);display:grid;place-items:center;font-size:25px;font-weight:950}.card h3{margin:17px 0 8px}.card p{color:var(--muted);font-size:14px;line-height:1.6}.card a{color:var(--red);font-size:13px;font-weight:950}
 .work{background:#071426;color:#fff}.work .title{color:#fff}.work .lead{color:#b9c8d6}.gallery{display:grid;grid-template-columns:1.45fr 1fr 1fr;gap:16px;margin-top:38px}.project{height:245px;border-radius:13px;overflow:hidden;position:relative;background:#10243d;border:1px solid #ffffff18}.project.big{height:506px;grid-row:span 2}.project img{width:100%;height:100%;object-fit:cover;transition:.45s}.project:hover img{transform:scale(1.06)}.project:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#000d)}.tag{position:absolute;bottom:15px;left:17px;z-index:2;font-weight:900;font-size:14px}
@@ -92,7 +92,7 @@ footer{border-top:1px solid #ffffff12}
 @media(max-width:950px){.hero-badges{margin:12px 4%}.hero-badges span{font-size:10px}}
 
 @media(max-width:950px){.links{display:none}.heroIn{grid-template-columns:1fr;padding:45px 5%}.heroPhoto{height:360px}.trust{margin:0 4%;grid-template-columns:1fr 1fr}.trust div:nth-child(2){border-right:0}.trust div:nth-child(-n+2){border-bottom:1px solid var(--line)}.services{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.project.big{height:245px;grid-row:auto}.split,.quoteIn{grid-template-columns:1fr}.mobile{display:block;position:fixed;left:14px;right:14px;bottom:14px;background:var(--red);color:#fff;text-align:center;padding:15px;border-radius:10px;font-weight:950;z-index:99;box-shadow:0 12px 30px #0006}}
-@media(max-width:600px){.top{font-size:10px;gap:9px}.brand{font-size:19px}.brand small{font-size:7px}.navcta{font-size:12px;padding:11px 13px}nav{height:66px;padding:0 4%}.heroIn{padding:40px 4%}h1{letter-spacing:-2.5px}.hero p{font-size:16px}.heroPhoto{height:285px}section{padding:65px 4%}.services,.gallery,.checks{grid-template-columns:1fr}.project,.project.big{height:250px}.trust strong{font-size:21px}.trust span{font-size:9px}.trust div{padding:18px 7px}}
+@media(max-width:600px){.top{font-size:10px;gap:9px}.brand{font-size:19px}.brand small{font-size:7px}.navcta{font-size:12px;padding:11px 13px}nav{height:66px;padding:0 4%}.heroIn{padding:40px 4%}h1{letter-spacing:-2.5px}.hero p{font-size:16px}.heroPhoto{height:300px}section{padding:65px 4%}.services,.gallery,.checks{grid-template-columns:1fr}.project,.project.big{height:250px}.trust strong{font-size:21px}.trust span{font-size:9px}.trust div{padding:18px 7px}}
 </style>
 </head>
 <body>
@@ -113,7 +113,7 @@ footer{border-top:1px solid #ffffff12}
       <p>A family-owned roofing company focused on roof repairs, leak repair and roof replacement across Hillsborough, Pinellas, Pasco and Hernando Counties.</p>
       <div class="actions"><a class="btn redbtn" href="#contact">GET A FREE ESTIMATE →</a><a class="btn outline" href="#services">VIEW SERVICES</a></div>
     </div>
-    <div class="heroPhoto"><img src="assets/hero.jpg" alt="Professional roofer working on a residential roof"></div>
+    <div class="heroPhoto"><img src="assets/hero-worker.jpg" alt="Professional roofer working on a residential roof"></div>
   </div>
 </header>
 
@@ -131,7 +131,7 @@ footer{border-top:1px solid #ffffff12}
 <section id="services">
 <div class="wrap">
   <div class="eyebrow">WHAT WE DO</div><h2 class="title">ROOFING BUILT AROUND THE PROBLEM.</h2>
-  <p class="lead">The site is structured around the services A Manos Roofing publicly highlights, with direct calls to action so a homeowner can quickly request help.</p>
+  <p class="lead">From small leaks to complete roof replacements, the goal is simple: clear advice, dependable workmanship and a roof you can feel confident about.</p>
   <div class="services">
     <article class="card"><div class="icon">⌂</div><h3>Roof Repair</h3><p>Fast, professional help for damaged roofing, flashing and problem areas.</p><a href="#contact">REQUEST SERVICE →</a></article>
     <article class="card"><div class="icon">▲</div><h3>Roof Replacement</h3><p>Complete replacement for aging or severely damaged roofs.</p><a href="#contact">GET AN ESTIMATE →</a></article>
@@ -148,7 +148,7 @@ footer{border-top:1px solid #ffffff12}
 <section class="work" id="work">
 <div class="wrap">
   <div class="eyebrow">ROOFING SHOWCASE</div><h2 class="title">QUALITY YOU CAN SEE.</h2>
-  <p class="lead">A visual-first portfolio section gives homeowners a quick way to understand the type of roofing work the company handles. These visuals are concept assets for the redesign preview.</p>
+  <p class="lead">See the kind of roofing work homeowners can expect — from repairs and replacements to detailed residential roof work.</p>
   <div class="gallery">
     <div class="project big"><img src="assets/roofer-working.jpg" alt="Roofer working on a roof"><span class="tag">Roof Repair</span></div>
     <div class="project"><img src="assets/roof-home.jpg" alt="Residential roof"><span class="tag">Residential Roofing</span></div>
@@ -165,7 +165,7 @@ footer{border-top:1px solid #ffffff12}
   <div>
     <div class="eyebrow">WHY A MANOS ROOFING</div>
     <h2 class="title">EXPERIENCE FOR THE ROOFS OTHERS WALK AWAY FROM.</h2>
-    <p class="lead">Public business profiles describe A Manos Roofing as a small, family-owned company with more than 20 years of trade experience, specializing in leak repair and roof replacement.</p>
+    <p class="lead">With more than two decades in the roofing trade, A Manos Roofing brings a practical, local approach to repairs, leak work and roof replacement across the Tampa Bay area.</p>
     <div class="checks">
       <div class="check"><strong>20+ Years</strong><span>Experience in the roofing trade.</span></div>
       <div class="check"><strong>Leak Specialists</strong><span>Focused on difficult roof leaks.</span></div>
