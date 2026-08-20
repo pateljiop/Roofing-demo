@@ -89,6 +89,37 @@ footer{border-top:1px solid #ffffff12}
 .hero-badges{max-width:1120px;margin:-18px auto 18px;position:relative;z-index:5;display:flex;justify-content:center;gap:9px;flex-wrap:wrap}
 .hero-badges span{background:#fff;border:1px solid #e5ebf0;color:var(--navy);padding:8px 12px;border-radius:30px;font-size:11px;font-weight:900;box-shadow:0 8px 25px #071a3210}
 .hero-badges span:first-letter{color:var(--red)}
+
+/* ===== FINAL POLISH v3 ===== */
+.heroPhoto:before{content:none!important}
+.heroPhoto:after{left:16px;bottom:16px;width:90px;height:3px;box-shadow:0 0 18px #d71920}
+.heroPhoto{background:#0b223d}
+.premium-gallery{grid-template-columns:1.25fr .9fr .9fr;gap:14px}
+.premium-gallery .project{background:#0b223d;border-radius:12px;border:1px solid #ffffff22}
+.premium-gallery .project.big{min-height:500px}
+.premium-gallery .project:not(.big){height:243px}
+.premium-gallery .project img{filter:saturate(.96) contrast(1.03)}
+.premium-gallery .project:hover{transform:translateY(-5px)}
+.premium-gallery .tag{background:#071426dd;border-radius:6px;padding:9px 11px;left:12px;bottom:12px}
+.premium-gallery .tag:before{width:6px;height:6px}
+.work .eyebrow{margin-bottom:3px}
+.work .lead{max-width:650px}
+footer{padding:48px 5% 32px}
+.foot{align-items:center}
+.foot > div:last-child{font-size:12px}
+@media(max-width:950px){
+ .premium-gallery{grid-template-columns:1fr 1fr}
+ .premium-gallery .project.big{grid-column:span 2;min-height:330px}
+ .premium-gallery .project:not(.big){height:220px}
+}
+@media(max-width:600px){
+ .premium-gallery{grid-template-columns:1fr 1fr}
+ .premium-gallery .project.big{grid-column:span 2;height:290px;min-height:290px}
+ .premium-gallery .project:not(.big){height:190px}
+ footer{padding:40px 5% 70px}
+ .foot{display:grid;gap:15px;text-align:left}
+}
+
 @media(max-width:950px){.hero-badges{margin:12px 4%}.hero-badges span{font-size:10px}}
 
 @media(max-width:950px){.links{display:none}.heroIn{grid-template-columns:1fr;padding:45px 5%}.heroPhoto{height:360px}.trust{margin:0 4%;grid-template-columns:1fr 1fr}.trust div:nth-child(2){border-right:0}.trust div:nth-child(-n+2){border-bottom:1px solid var(--line)}.services{grid-template-columns:1fr 1fr}.gallery{grid-template-columns:1fr 1fr}.project.big{height:245px;grid-row:auto}.split,.quoteIn{grid-template-columns:1fr}.mobile{display:block;position:fixed;left:14px;right:14px;bottom:14px;background:var(--red);color:#fff;text-align:center;padding:15px;border-radius:10px;font-weight:950;z-index:99;box-shadow:0 12px 30px #0006}}
@@ -149,13 +180,13 @@ footer{border-top:1px solid #ffffff12}
 <div class="wrap">
   <div class="eyebrow">ROOFING SHOWCASE</div><h2 class="title">QUALITY YOU CAN SEE.</h2>
   <p class="lead">See the kind of roofing work homeowners can expect — from repairs and replacements to detailed residential roof work.</p>
-  <div class="gallery">
-    <div class="project big"><img src="assets/roofer-working.jpg" alt="Roofer working on a roof"><span class="tag">Roof Repair</span></div>
-    <div class="project"><img src="assets/roof-home.jpg" alt="Residential roof"><span class="tag">Residential Roofing</span></div>
-    <div class="project"><img src="assets/roof-aerial.jpg" alt="Roof replacement view"><span class="tag">Roof Replacement</span></div>
-    <div class="project"><img src="assets/roof-detail.jpg" alt="Roof detail"><span class="tag">Roofing Detail</span></div>
-    <div class="project"><img src="assets/truck.jpg" alt="Roofing company truck concept"><span class="tag">Local Roofing Team</span></div>
-  </div>
+  <div class="gallery premium-gallery">
+    <div class="project big"><img src="assets/roofer-working.jpg" alt="Professional roofer repairing a residential roof"><span class="tag">Roof Repair</span></div>
+    <div class="project"><img src="assets/roof-home.jpg" alt="Completed residential roofing"><span class="tag">Residential Roofing</span></div>
+    <div class="project"><img src="assets/roof-aerial.jpg" alt="Residential roof replacement"><span class="tag">Roof Replacement</span></div>
+    <div class="project"><img src="assets/roof-detail.jpg" alt="Roofing detail and workmanship"><span class="tag">Roofing Detail</span></div>
+    <div class="project"><img src="assets/truck.jpg" alt="A Manos Roofing service vehicle"><span class="tag">Local Roofing Team</span></div>
+  </div></div>
 </div>
 </section>
 
